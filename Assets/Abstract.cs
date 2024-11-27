@@ -6,4 +6,5 @@ public abstract class Abstract : MonoBehaviour //Abstract (Class for SerializeFi
 {
     [SerializeField] protected int Health; //SerializeField (OOP FUNCTION) protected (OOP FUNCTION FOR INT) "Health" (name)
     [SerializeField] protected int Defense; //SerializeField (OOP FUNCTION) protected (OOP FUNCTION FOR INT) "Defense" (name)
+    [SerializeField] protected int Attack; //SerializeField (OOP FUNCTION) protected (OOP FUNCTION FOR INT) "Defense" (name)
 }
