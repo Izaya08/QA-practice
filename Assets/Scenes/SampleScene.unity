@@ -170,51 +170,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &702139788
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 702139790}
-  - component: {fileID: 702139789}
-  m_Layer: 0
-  m_Name: AttackButton2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &702139789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702139788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5710e926ad003f43a449da24e1a7832, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ui: {fileID: 0}
---- !u!4 &702139790
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702139788}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +404,7 @@ MonoBehaviour:
   Defense: 50
   Attack: 35
   ui: {fileID: 2045762220}
+  healthCode: {fileID: 1627601544}
 --- !u!1 &1318894383
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,6 +438,7 @@ MonoBehaviour:
   Defense: 50
   Attack: 25
   ui: {fileID: 2045762220}
+  healthCode: {fileID: 1627601544}
 --- !u!4 &1318894385
 Transform:
   m_ObjectHideFlags: 0
@@ -545,6 +502,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1627601543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1627601545}
+  - component: {fileID: 1627601544}
+  m_Layer: 0
+  m_Name: Health Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1627601544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627601543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7480013d2bb716419c296ffb2cc74f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1: {fileID: 1318894384}
+  player2: {fileID: 1939800427}
+  player3: {fileID: 1037761827}
+  hatdog: 0
+  healthLOL: Health
+--- !u!4 &1627601545
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627601543}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1730599731
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +560,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1730599733}
-  - component: {fileID: 1730599732}
   m_Layer: 0
   m_Name: AttackButton1
   m_TagString: Untagged
@@ -562,19 +567,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1730599732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1730599731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1856421b26caaff4a96f70739538cb5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ui: {fileID: 0}
 --- !u!4 &1730599733
 Transform:
   m_ObjectHideFlags: 0
@@ -638,6 +630,7 @@ MonoBehaviour:
   Defense: 5
   Attack: 15
   ui: {fileID: 2045762220}
+  healthCode: {fileID: 1627601544}
 --- !u!1 &2045762219
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,6 +660,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e80b8071e8c69c1479f62f44cd4cc25a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health: 0
+  Defense: 0
+  Attack: 0
+  ui: {fileID: 2045762220}
   Style:
     m_Name: 
     m_Normal:
@@ -722,14 +719,14 @@ MonoBehaviour:
       m_Top: 0
       m_Bottom: 0
     m_Font: {fileID: 0}
-    m_FontSize: 45
+    m_FontSize: 35
     m_FontStyle: 1
     m_Alignment: 0
     m_WordWrap: 0
     m_RichText: 1
     m_TextClipping: 0
     m_ImagePosition: 0
-    m_ContentOffset: {x: 15.4, y: 111.9}
+    m_ContentOffset: {x: 20.2, y: 22.8}
     m_FixedWidth: 0
     m_FixedHeight: 0
     m_StretchWidth: 1
@@ -739,6 +736,7 @@ MonoBehaviour:
   Stats: 'Health: 100Defense: 50
 
     Attack: 0'
+  EnemyStats: "Health: \nDefense: \nAttack: "
 --- !u!4 &2045762221
 Transform:
   m_ObjectHideFlags: 0
@@ -767,4 +765,4 @@ SceneRoots:
   - {fileID: 1483058493}
   - {fileID: 678580421}
   - {fileID: 1730599733}
-  - {fileID: 702139790}
+  - {fileID: 1627601545}

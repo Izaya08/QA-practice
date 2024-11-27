@@ -8,7 +8,7 @@ public class Attack1 : MonoBehaviour
 
     private void OnGUI() // OnGUI (Using GUI for .Box, .Label)
     {
-        if (GUI.Button(new Rect(473, 180, 292, 155), "Attack Demon")) // if(FUNCTION)GUI.(BUTTON)(BOX)(NAME)
+        if (GUI.Button(new Rect(467, 318, 302, 102), "Attack")) // if(FUNCTION)GUI.(BUTTON)(BOX)(NAME)
         {
 
         }
